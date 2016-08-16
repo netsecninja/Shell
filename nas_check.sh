@@ -5,6 +5,7 @@
 flag=0
 
 # Time stamp for logs
+echo -n "NAS check script "
 date
 
 # Check for mount
