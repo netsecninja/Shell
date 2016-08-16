@@ -4,9 +4,8 @@
 # Error flag
 flag=0
 
-# Time stamp for logs
-echo -n "NAS check script "
-date
+# Stamp for logs
+echo "NAS check..."
 
 # Check for mount
 # Drive A(1)
@@ -57,5 +56,5 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ $flag -eq 0 ]; then
-    echo "Check complete, no errors found."
+    echo "NAS check complete, no errors found."
 fi
