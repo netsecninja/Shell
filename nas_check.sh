@@ -4,9 +4,6 @@
 # Error flag
 flag=0
 
-# Stamp for logs
-echo "NAS check..."
-
 # Check for mount
 # Drive A(1)
 if ! grep -qs '/media/hd1' /proc/mounts; then
@@ -56,5 +53,5 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ $flag -eq 0 ]; then
-    echo "NAS check complete, no errors found."
+    echo "Check complete, no errors found."
 fi
